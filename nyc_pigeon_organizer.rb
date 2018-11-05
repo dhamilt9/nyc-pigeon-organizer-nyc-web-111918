@@ -3,8 +3,9 @@ def nyc_pigeon_organizer(data)
   data.each do |data, dataarray|
     dataarray.each do |attribute, names|
       names.each do |x|
-        pidgen_list[x.to_s][attribute]=pidgen_list[x.to_s][data]+[attribute]
+        pigeon_list[x.to_s][attribute]=pidgen_list[x.to_s][data]+[attribute]
       end
     end
   end
+  return pigeon_list
 end
